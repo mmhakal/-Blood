@@ -1,0 +1,17 @@
+{
+  "name": "blood-diagnostic-lis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blood Diagnostic Laboratory Management Software / LIS",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install && npm --prefix extension install",
+    "migrate": "npm --prefix backend run migrate",
+    "seed": "npm --prefix backend run seed",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:extension": "npm --prefix extension run dev",
+    "build:extension": "npm --prefix extension run build",
+    "test:extension": "npm --prefix extension run test",
+    "package:extension": "npm --prefix extension run package"
+  }
+}

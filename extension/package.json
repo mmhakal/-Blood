@@ -1,0 +1,31 @@
+{
+  "name": "mediflow-lis-extension",
+  "version": "1.0.0",
+  "description": "MediFlow LIS - Commercial-grade Manifest V3 Browser Extension Platform for Chrome, Edge, and Chromium browsers",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && node scripts/postbuild.js",
+    "build:staging": "tsc && vite build --mode staging && node scripts/postbuild.js",
+    "build:production": "tsc && vite build --mode production && node scripts/postbuild.js",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx tests/runner.ts",
+    "package": "npm run build:production && node scripts/package.js"
+  },
+  "dependencies": {
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.300",
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}
